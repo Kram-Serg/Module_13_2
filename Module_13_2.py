@@ -6,10 +6,6 @@ api =''
 bot = Bot(token = api)
 dp = Dispatcher(bot, storage= MemoryStorage())
 
-# @dp.message_handler(text = ['Urban', 'gr'])
-# async def urban_message(message):
-#     print('Urban message')
-
 @dp.message_handler(commands=['start'])
 async def star_massage(message):
     print('Привет! Я бот помогающий твоему здоровью.')
